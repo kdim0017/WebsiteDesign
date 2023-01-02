@@ -6,16 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script>
+        function openPage(pageName, elmnt, color) {
+
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        
+        document.getElementById(pageName).style.display = "block";
+        
+        elmnt.style.backgroundColor = color;
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
 </head>
 <body>
-    <head>
-        <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-          </div>
-    </head> <br><br>
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('Login', this, 'green')" id="defaultOpen">Login/Register</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">About Us</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact Us</button>
+
+    <div id="Login" class="tabcontent">
+    <h3>Login/Register</h3>
+    <p>Some news this fine day!</p>
+    </div>
+
+    <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Who we are and what we do.</p>
+    </div> 
 
     <main>
     <div class="grid-container">
