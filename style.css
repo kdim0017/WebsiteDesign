@@ -126,3 +126,65 @@ body, html {
 #Contact{
     background-color: black;
 }
+
+.casino-games{
+    position: relative;
+    background-image: #ddd;
+}
+
+.games .casino-games{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.games .casino-games .image{
+    height: 250px;
+    width: 400px;
+    border: 5px solid white;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.games .casino-games .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.games .casino-games .image:hover img{
+    transform: scale(1.1);
+}
+
+.games .popup-games{
+    position: fixed;
+    top: 0; left: 0;
+    background: grey;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.games .popup-games span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.games .popup-games img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    width: 750px;
+    object-fit: cover;
+}
+
+
