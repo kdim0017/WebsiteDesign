@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <title>Web Design Assignment</title>
     <script>
         function openPage(pageName, elmnt, color) {
 
@@ -27,6 +29,12 @@
 
         document.getElementById("defaultOpen").click();
     </script>
+
+    <script>
+        function Login(){
+            alert("You are logged in");
+        }
+    </script>
 </head>
 <body>
     <button class="tablink" onclick="openPage('Home', this, 'brown')">Home</button>
@@ -37,7 +45,8 @@
 
     <div id="Login" class="tabcontent">
     <h1>Login</h1>
-    <p>Some news this fine day!</p>
+    <h4>If it is your first time here go to the register tab and make a new account.</h4>
+    <button onclick="Login()">LOGIN</button>
     </div>
 
     <div id="Register" class="tabcontent">
