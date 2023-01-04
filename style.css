@@ -1,107 +1,24 @@
-body{
-    background-color: black;
-}
-
-.games {
-    display: grid;
-    row-gap: 50px;
-    grid-template-columns: auto auto auto;
-    background-color: black;
-    padding: 10px;
-}
-
-.game1 {
-    background-color: gold;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.game2 {
-    background-color: gold;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.game3 {
-    background-color: gold;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.game4 {
-    background-color: gold;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.game5 {
-    background-color: gold;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.game6 {
-    background-color: gold;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.game7 {
-    background-color: gold;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.game8 {
-    background-color: gold;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.game9 {
-    background-color: gold;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
 body, html {
     height: 100%;
     margin: 0;
     font-family: Arial;
-}
-
-.tablink {
     background-color: gold;
-    color: black;
+}
+  
+.tablink {
+    background-color: #555;
+    color: white;
     float: left;
     border: none;
     outline: none;
+    cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
     width: 20%;
 }
   
 .tablink:hover {
-    background-color: black;
-    color: white;
+    background-color: #777;
 }
   
 .tabcontent {
@@ -112,79 +29,33 @@ body, html {
 }
 
 #Login{
-    background-color: blue;  
+    background-color: brown;
 }
 
 #Register{
     background-color: purple;
 }
 
-#About{
-    background-color: brown;
-}
-
 #Contact{
-    background-color: black;
+    background-color: darkblue;
 }
 
-.casino-games{
-    position: relative;
-    background-image: #ddd;
+#About{
+    background-color: darkred;
 }
 
-.games .casino-games{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 10px;
+div.games{
+    margin: 5px;
+    float: left;
+    width: 18.5%;
 }
 
-.games .casino-games .image{
-    height: 250px;
-    width: 400px;
-    border: 5px solid white;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.games .casino-games .image img{
-    height: 100%;
+div.games img{
     width: 100%;
-    object-fit: cover;
-    transition: .2s linear;
+    height: auto;
 }
 
-.games .casino-games .image:hover img{
-    transform: scale(1.1);
+div.description{
+    text-align: left;
+    color: black;
 }
-
-.games .popup-games{
-    position: fixed;
-    top: 0; left: 0;
-    background: grey;
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-}
-
-.games .popup-games span{
-    position: absolute;
-    top: 0; right: 10px;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #fff;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.games .popup-games img{
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid #fff;
-    width: 750px;
-    object-fit: cover;
-}
-
-

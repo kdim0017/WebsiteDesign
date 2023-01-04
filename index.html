@@ -10,82 +10,115 @@
     <title>Web Design Assignment</title>
     <script>
         function openPage(pageName, elmnt, color) {
-
+        
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
         }
-        
+
         tablinks = document.getElementsByClassName("tablink");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].style.backgroundColor = "";
         }
-        
+
         document.getElementById(pageName).style.display = "block";
-        
+
         elmnt.style.backgroundColor = color;
         }
 
         document.getElementById("defaultOpen").click();
     </script>
-
-    <script>
-        function Login(){
-            alert("You are logged in");
-        }
-    </script>
 </head>
 <body>
-    <button class="tablink" onclick="openPage('Home', this, 'brown')">Home</button>
-    <button class="tablink" onclick="openPage('Login', this,  'blue')" id="defaultOpen">Login</button>
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('Login', this, 'brown')" id="defaultOpen">Login</button>
     <button class="tablink" onclick="openPage('Register', this, 'purple')">Register</button>
-    <button class="tablink" onclick="openPage('About', this, 'brown')">About Us</button>
-    <button class="tablink" onclick="openPage('Contact', this, 'black')">Contact Us</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'darkblue')">Contact Us</button>
+    <button class="tablink" onclick="openPage('About', this, 'darkred')">About Us</button>
 
     <div id="Login" class="tabcontent">
-    <h1>Login</h1>
-    <h4>If it is your first time here go to the register tab and make a new account.</h4>
-    <button onclick="Login()">LOGIN</button>
+    <h3>Login</h3>
+    <p>If it is your first time on this page please make a new account in the register tab.</p>
     </div>
 
     <div id="Register" class="tabcontent">
-    <h1>Login</h1>
-    <p>Some news this fine day!</p>
-    </div>
-
-    <div id="About" class="tabcontent">
-    <h1>About Us</h1>
+    <h3>Register</h3>
     <p>Get in touch, or swing by for a cup of coffee.</p>
     </div>
 
     <div id="Contact" class="tabcontent">
-    <h1>Contact Us</h1>
-    <p>Who we are and what we do.</p>
+    <h3>Contact Us</h3>
+    <p>Who we are and what we do.</p>   
     </div>
 
-    <div id="Contact" class="tabcontent">
-    <h1>Contact Us</h1>
-    <p>Who we are and what we do.</p>
+    <div id="About" class="tabcontent">
+    <h3>About Us</h3>
+    <p>Who we are and what we do.</p>   
     </div>
 
     <div class="games">
-    <div class="casino-games">
-        <div class="image"><img src="Baccarat.jpg" alt=""></div>
-        <div class="image"><img src="Bingo.jpg" alt=""></div>
-        <div class="image"><img src="Blackjack.png" alt=""></div>
-        <div class="image"><img src="Craps.jpg" alt=""></div>
-        <div class="image"><img src="keno.jpg" alt=""></div>
-        <div class="image"><img src="Poker.jpg" alt=""></div>
-        <div class="image"><img src="Roulette.jpg" alt=""></div>
-        <div class="image"><img src="SlotMachines.jpg" alt=""></div>
-        <div class="image"><img src="WheelOfFortune.jpg" alt=""></div>
-    </div>
+        <a target="_blank" href="Baccarat.jpg">
+            <img src="Baccarat.jpg" alt="Baccarat" width="600" height="400">
+        </a>
+        <div class="description">Baccarat</div>
+    </div> 
 
-    <div class="popup-games">
-        <span>&times;</span>
-        <img src="Baccarat.jpg" alt="">
-    </div>
-    </div>
+    <div class="games">
+        <a target="_blank" href="Bingo.jpg">
+            <img src="Bingo.jpg" alt="Baccarat" width="600" height="400">
+        </a>
+        <div class="description">Bingo</div>
+    </div> 
+
+    <div class="games">
+        <a target="_blank" href="Blackjack.png">
+            <img src="Blackjack.png" alt="Blackjack" width="600" height="400">
+        </a>
+        <div class="description">Blackjack</div>
+    </div> 
+
+    <div class="games">
+        <a target="_blank" href="Craps.jpg">
+            <img src="Craps.jpg" alt="Craps" width="600" height="400">
+        </a>
+        <div class="description">Craps</div>
+    </div> 
+
+    <div class="games">
+        <a target="_blank" href="keno.jpg">
+            <img src="keno.jpg" alt="Keno" width="600" height="400">
+        </a>
+        <div class="description">Keno</div>
+    </div> 
+
+    <div class="games">
+        <a target="_blank" href="Poker.jpg">
+            <img src="Poker.jpg" alt="Poker" width="600" height="400">
+        </a>
+        <div class="description">Poker</div>
+    </div> 
+
+    <div class="games">
+        <a target="_blank" href="Roulette.jpg">
+            <img src="Roulette.jpg" alt="Roulette" width="600" height="400">
+        </a>
+        <div class="description">Roulette</div>
+    </div> 
+
+    <div class="games">
+        <a target="_blank" href="SlotMachines.jpg">
+            <img src="SlotMachines.jpg" alt="SlotMachines" width="600" height="400">
+        </a>
+        <div class="description">Slot Machines</div>
+    </div> 
+
+    <div class="games">
+        <a target="_blank" href="WheelOfFortune.jpg">
+            <img src="WheelOfFortune.jpg" alt="WheelOfFortune" width="600" height="400">
+        </a>
+        <div class="description">Wheel of Fortune</div>
+    </div> 
+</body>
 </body>
 </html>
