@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial;
-    background-color: gold;
+    background-color: white;
 }
   
 .tablink {
@@ -26,6 +26,10 @@ body, html {
     display: none;
     padding: 100px 20px;
     height: 100%;
+}
+
+#Home{
+    background-color: red;
 }
 
 #Login{
