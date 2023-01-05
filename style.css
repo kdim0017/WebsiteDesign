@@ -34,18 +34,22 @@ body, html {
 
 #Login{
     background-color: brown;
+    text-align: center;
 }
 
 #Register{
     background-color: purple;
+    text-align: center;
 }
 
 #Contact{
     background-color: darkblue;
+    text-align: center;
 }
 
 #About{
     background-color: darkred;
+    text-align: justify;
 }
 
 div.games{
@@ -63,3 +67,8 @@ div.description{
     text-align: left;
     color: black;
 }
+
+#button{
+    border: 2px solid black;
+}
+

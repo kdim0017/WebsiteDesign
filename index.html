@@ -32,10 +32,17 @@
 
         document.getElementById("defaultOpen").click();
     </script>
+
     <script>
         function Login(){
             alert("You are logged in");
         }
+    </script>
+
+    <script>
+        $(document).ready(function() {
+        $("#basic-form").validate();
+        });
     </script>
 </head>
 <body>
@@ -126,7 +133,21 @@
 
     <div id="Register" class="tabcontent">
     <h3>Register</h3>
-    <p>Get in touch, or swing by for a cup of coffee.</p>
+    <form id="registerform" action="" method="post">
+        <label for="name">Name <span>(required)</span></label><br>
+        <input id="name" type="text" name="name" required><br><br>
+
+        <label for="surname">Surname <span>(required)</span></label><br>
+        <input id="surname" type="text" name="surname" required><br><br>
+
+        <label for="phone">Phone Number <span>(required)</span></label><br>
+        <input id="phone" type="tel" name="phone" required><br><br>
+        
+        <label for="email">E-mail <span>(required)</span></label><br>
+        <input id="email" type="email" name="email" required><br><br>
+
+        <input id="button" class="submit" type="submit" value="SUBMIT">
+    </form>
     </div>
 
     <div id="Contact" class="tabcontent">
@@ -138,7 +159,20 @@
 
     <div id="About" class="tabcontent">
     <h1>About Us</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>   
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div id="carousel" class="carousel" data-bs-ride="carousel">
+        <div class="carouselslides">
+          <div class="carousel-item active">
+            <img src="CasinoOutside.jpg" class="d-block w-100" alt="..." height="400">
+          </div>
+          <div class="carousel-item">
+            <img src="CasinoInside.jpg" class="d-block w-100" alt="..." height="400">
+          </div>
+          <div class="carousel-item">
+            <img src="CasinoAD.jpg" class="d-block w-100" alt="..." height="400">
+          </div>
+        </div>
+      </div>   
 </body>
 </body>
 </html>
