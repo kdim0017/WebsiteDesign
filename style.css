@@ -72,3 +72,14 @@ div.description{
     border: 2px solid black;
 }
 
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+}
